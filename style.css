@@ -1258,3 +1258,55 @@ body {
     animation: none;
   }
 }
+
+/* ── HERO single column now (code card removed) ── */
+.hero {
+  grid-template-columns: 1fr !important;
+  text-align: center;
+}
+.hero-value { margin-left: auto; margin-right: auto; }
+.hero-badge, .hero-typing-wrap, .hero-ctas,
+.hero-socials, .hero-scroll-hint { justify-content: center; }
+
+/* ── HERO CENTER FIX ── */
+.hero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  grid-template-columns: unset !important;
+}
+.hero-container {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-name, .hero-typing-wrap, .hero-value,
+.hero-badge, .hero-ctas, .hero-socials,
+.hero-scroll-hint {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.hero-value { max-width: 600px; }
+
+/* ── HERO LEFT ALIGN FIX ── */
+.hero {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  align-items: center !important;
+  text-align: left !important;
+  flex-direction: unset !important;
+}
+.hero-container {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+.hero-name, .hero-typing-wrap, .hero-value { text-align: left !important; }
+.hero-badge { justify-content: flex-start !important; }
+.hero-ctas { justify-content: flex-start !important; align-items: flex-start !important; }
+.hero-socials { justify-content: flex-start !important; }
+.hero-scroll-hint { justify-content: flex-start !important; }
