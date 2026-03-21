@@ -119,35 +119,6 @@
         <span>Scroll to explore</span>
       </div>
     </div>
-    <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
-      <div class="data-card">
-        <div class="data-card-header">
-          <span class="dc-dot red"></span>
-          <span class="dc-dot yellow"></span>
-          <span class="dc-dot green"></span>
-          <span class="dc-title">finsight_analysis.py</span>
-        </div>
-        <pre class="data-card-code"><span class="c-kw">import</span> pandas <span class="c-kw">as</span> pd
-<span class="c-kw">from</span> sklearn.ensemble <span class="c-kw">import</span> RandomForest
-
-df = pd.read_csv(<span class="c-str">'transactions.csv'</span>)
-<span class="c-cm"># 284,807 transactions loaded</span>
-
-model = RandomForest(
-  n_estimators=<span class="c-num">100</span>,
-  class_weight=<span class="c-str">'balanced'</span>
-)
-model.fit(X_train, y_train)
-
-<span class="c-cm"># Precision: 98.7% ✓</span>
-<span class="c-cm"># ROC-AUC: 0.908 ✓</span></pre>
-        <div class="data-card-stats">
-          <div class="dc-stat"><span class="dc-val">98.7%</span><span class="dc-lbl">Precision</span></div>
-          <div class="dc-stat"><span class="dc-val">0.908</span><span class="dc-lbl">ROC-AUC</span></div>
-          <div class="dc-stat"><span class="dc-val">284K</span><span class="dc-lbl">Records</span></div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- ░░ ABOUT ░░ -->
