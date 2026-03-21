@@ -39,16 +39,16 @@ window.addEventListener('load', () => {
 
 const SKILLS = [
   { name: 'Python', cat: 'programming', icon: 'fab fa-python', level: 85, color: '#3776ab' },
-  { name: 'Pandas', cat: 'analysis', icon: 'fas fa-table', level: 80, color: '#150458' },
-  { name: 'NumPy', cat: 'analysis', icon: 'fas fa-calculator', level: 75, color: '#013243' },
+  { name: 'Pandas', cat: 'analysis', icon: 'fas fa-table', level: 70, color: '#150458' },
+  { name: 'NumPy', cat: 'analysis', icon: 'fas fa-calculator', level: 65, color: '#013243' },
   { name: 'Power BI', cat: 'visualization', icon: 'fas fa-chart-pie', level: 80, color: '#f2c811' },
-  { name: 'Matplotlib', cat: 'visualization', icon: 'fas fa-chart-line', level: 72, color: '#11557c' },
-  { name: 'MySQL', cat: 'database', icon: 'fas fa-database', level: 78, color: '#00758f' },
-  { name: 'Scikit-learn', cat: 'ml', icon: 'fas fa-brain', level: 75, color: '#f89939' },
-  { name: 'SQL', cat: 'database', icon: 'fas fa-server', level: 80, color: '#336791' },
-  { name: 'Seaborn', cat: 'visualization', icon: 'fas fa-chart-bar', level: 70, color: '#4c72b0' },
-  { name: 'Excel', cat: 'analysis', icon: 'fas fa-file-excel', level: 82, color: '#217346' },
-  { name: 'Git', cat: 'programming', icon: 'fab fa-git-alt', level: 70, color: '#f05032' },
+  { name: 'Matplotlib', cat: 'visualization', icon: 'fas fa-chart-line', level: 65, color: '#11557c' },
+  { name: 'MySQL', cat: 'database', icon: 'fas fa-database', level: 75, color: '#00758f' },
+  { name: 'Scikit-learn', cat: 'ml', icon: 'fas fa-brain', level: 60, color: '#f89939' },
+  { name: 'SQL', cat: 'database', icon: 'fas fa-server', level: 75, color: '#336791' },
+  { name: 'Seaborn', cat: 'visualization', icon: 'fas fa-chart-bar', level: 65, color: '#4c72b0' },
+  { name: 'Excel', cat: 'analysis', icon: 'fas fa-file-excel', level: 80, color: '#217346' },
+  { name: 'Git', cat: 'programming', icon: 'fab fa-git-alt', level: 80, color: '#f05032' },
   { name: 'Jupyter', cat: 'programming', icon: 'fas fa-code', level: 85, color: '#f37626' },
 ];
 
@@ -93,7 +93,7 @@ const PROJECTS = [
     desc: 'A Python + MySQL powered desktop application for complete employee lifecycle management — onboarding, records, departments, and reporting.',
     icon: '👥',
     cats: ['app', 'data'],
-    badges: ['Python', 'MySQL', 'App'],
+    badges: ['Python', 'MySQL', 'Tkinter'],
     metrics: [
       { val: '6', lbl: 'CRUD Ops' },
       { val: '4', lbl: 'Modules' },
