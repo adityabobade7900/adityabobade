@@ -1222,3 +1222,12 @@ body {
     box-sizing: border-box;
   }
 }
+
+/* ── METRICS MOBILE SIZE FIX ── */
+@media (max-width: 768px) {
+  .metric-icon { font-size: 1.2rem; margin-bottom: 10px; }
+  .metric-val { font-size: 1.6rem; }
+  .metric-suffix { font-size: 1rem; }
+  .metric-label { font-size: 0.68rem; letter-spacing: 0.06em; margin-top: 6px; }
+  .metric-item { padding: 24px 12px; }
+}
