@@ -1231,3 +1231,30 @@ body {
   .metric-label { font-size: 0.68rem; letter-spacing: 0.06em; margin-top: 6px; }
   .metric-item { padding: 24px 12px; }
 }
+
+/* ── ABOUT INTRO ROW — text + code card side by side ── */
+.about-intro-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+.about-code-card {
+  animation: float 6s ease-in-out infinite;
+  font-size: 0.75rem;
+}
+.about-code-card .data-card-code {
+  font-size: 0.68rem;
+  padding: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+@media (max-width: 900px) {
+  .about-intro-row {
+    grid-template-columns: 1fr;
+  }
+  .about-code-card {
+    animation: none;
+  }
+}
