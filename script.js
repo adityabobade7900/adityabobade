@@ -66,7 +66,7 @@ const PROJECTS = [
       { val: '0.908', lbl: 'ROC-AUC' },
       { val: '284K', lbl: 'Records' },
     ],
-    tech: ['Python', 'Pandas', 'Scikit-learn', 'RandomForest', 'Power BI', 'Matplotlib'],
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'RandomForest', 'Power-BI', 'Matplotlib'],
     github: 'https://github.com/adityabobade7900/FinSight-Financial-Anomaly-Detection',
     modal: {
       fullDesc: `FinSight is a production-grade fraud detection system built on the Kaggle Credit Card Fraud dataset — 284,807 real-world transactions. The core challenge: extreme class imbalance (only 0.17% fraud). I solved this with SMOTE oversampling and class-weight balancing, then built and tuned a Random Forest classifier.\n\nThe final model achieves 98.7% precision and 0.908 ROC-AUC — meaning almost every transaction flagged as fraud actually is fraud, minimizing false positives that frustrate genuine customers.`,
@@ -99,7 +99,7 @@ const PROJECTS = [
       { val: '4', lbl: 'Modules' },
       { val: '100%', lbl: 'Test Pass' },
     ],
-    tech: ['Python', 'MySQL', 'mysql-connector', 'tkinter'],
+    tech: ['Python', 'MySQL', 'mysql-connector', 'TKinter'],
     github: 'https://github.com/adityabobade7900/EmployeeHub',
     modal: {
       fullDesc: `A real-world Employee Management System demonstrating full-stack thinking with Python and MySQL. Built for HR workflows — from onboarding a new hire to running departmental salary reports.\n\nDesigned with normalized database schemas, proper foreign key constraints, and input validation to mirror production-quality code. The GUI (tkinter) keeps it accessible for non-technical HR staff.`,
@@ -132,7 +132,7 @@ const PROJECTS = [
       { val: '6', lbl: 'API Routes' },
       { val: '100%', lbl: 'Test Pass' },
     ],
-    tech: ['Python', 'Flask', 'SQLite', 'Jinja2', 'Chart.js', 'HTML/CSS'],
+    tech: ['Python', 'Flask', 'SQLite', 'HTML/CSS'],
     github: 'https://github.com/adityabobade7900/ExpenseTracker',
     modal: {
       fullDesc: `Expense Tracker is a full-stack web application built with Python (Flask) and SQLite. It allows users to record, view, edit, and delete daily expenses through a clean responsive interface — no external database server required.\n\nFeatures include category-based colour badges, a running total summary, server-side validation, and a live Chart.js powered chart that lets you switch between 5 chart types (Bar, Pie, Doughnut, Polar Area, Line).`,
@@ -166,7 +166,7 @@ const PROJECTS = [
       { val: '$4.6M', lbl: 'Peak Month' },
       { val: '5', lbl: 'Business Q&As' },
     ],
-    tech: ['Python', 'Pandas', 'Matplotlib', 'Jupyter', 'itertools', 'collections'],
+    tech: ['Python', 'Pandas', 'Matplotlib', 'Jupyter', 'Collections'],
     github: 'https://github.com/adityabobade7900/Sales-Data-Analysis-Python',
     modal: {
       fullDesc: `A complete Exploratory Data Analysis on 12 months of real-world electronics store sales data (186,850 rows). The project answers 5 key business questions around when to advertise, where to focus sales efforts, which products to bundle, and how revenue varies by month and city.\n\nAll data cleaning, feature engineering, and visualisations are done in Python using Pandas and Matplotlib inside a Jupyter Notebook.`,
