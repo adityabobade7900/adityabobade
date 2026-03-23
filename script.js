@@ -119,13 +119,81 @@ const PROJECTS = [
       ],
     }
   },
+  {
+    id: 'expense',
+    title: 'Expense Tracker',
+    subtitle: 'Full-Stack Flask Web Application',
+    desc: 'A lightweight Flask + SQLite web app to record, view, edit and delete daily expenses with interactive Chart.js visualisations across 5 chart types.',
+    icon: '💰',
+    cats: ['app', 'data'],
+    badges: ['Flask', 'Python', 'SQLite'],
+    metrics: [
+      { val: '5', lbl: 'Chart Types' },
+      { val: '6', lbl: 'API Routes' },
+      { val: '100%', lbl: 'Test Pass' },
+    ],
+    tech: ['Python', 'Flask', 'SQLite', 'Jinja2', 'Chart.js', 'HTML/CSS'],
+    github: 'https://github.com/adityabobade7900/ExpenseTracker',
+    modal: {
+      fullDesc: `Expense Tracker is a full-stack web application built with Python (Flask) and SQLite. It allows users to record, view, edit, and delete daily expenses through a clean responsive interface — no external database server required.\n\nFeatures include category-based colour badges, a running total summary, server-side validation, and a live Chart.js powered chart that lets you switch between 5 chart types (Bar, Pie, Doughnut, Polar Area, Line).`,
+      insights: [
+        'Full CRUD operations — Add, View, Edit, Delete expenses with server-side validation',
+        'Interactive Chart.js visualisation with 5 switchable chart types (Bar, Pie, Doughnut, Polar Area, Line)',
+        'Category badges (Food, Travel, Shopping, Bills, Other) with colour coding',
+        'Delete uses POST method — safe from accidental browser/bot triggers',
+        'SQLite auto-created on first run — zero manual database setup required',
+        'Demo database script inserts 20 sample records across all categories instantly',
+      ],
+      impact: 'Demonstrates full-stack thinking — from database schema design to frontend interactivity. A practical tool that gives instant visual spending insights with zero infrastructure overhead.',
+      metrics: [
+        { val: '5', lbl: 'Chart Types' },
+        { val: '6', lbl: 'API Routes' },
+        { val: '5', lbl: 'Categories' },
+        { val: '20', lbl: 'Demo Records' },
+      ],
+    }
+  },
+  {
+    id: 'sales',
+    title: 'Sales Data Analysis',
+    subtitle: 'Python EDA — 12 Months of Electronics Sales',
+    desc: 'EDA on 186,850 rows of real electronics store data. Uncovered best months ($4.6M in Dec), top cities ($8.2M in SF), peak ad hours, and product bundling patterns.',
+    icon: '📊',
+    cats: ['data', 'ml'],
+    badges: ['Python', 'Pandas', 'Matplotlib'],
+    metrics: [
+      { val: '186K', lbl: 'Rows Analyzed' },
+      { val: '$4.6M', lbl: 'Peak Month' },
+      { val: '5', lbl: 'Business Q&As' },
+    ],
+    tech: ['Python', 'Pandas', 'Matplotlib', 'Jupyter', 'itertools', 'collections'],
+    github: 'https://github.com/adityabobade7900/Sales-Data-Analysis-Python',
+    modal: {
+      fullDesc: `A complete Exploratory Data Analysis on 12 months of real-world electronics store sales data (186,850 rows). The project answers 5 key business questions around when to advertise, where to focus sales efforts, which products to bundle, and how revenue varies by month and city.\n\nAll data cleaning, feature engineering, and visualisations are done in Python using Pandas and Matplotlib inside a Jupyter Notebook.`,
+      insights: [
+        'December was the best month — $4.6M revenue driven by holiday season shopping',
+        'San Francisco led all cities with $8.2M in total sales revenue',
+        'Best ad times: 11 AM and 7 PM — peak order volume hours for maximum impact',
+        'iPhone + Lightning Cable is the top product bundle with 2,140 co-purchases',
+        'AAA Batteries led in units sold (31,017) — low price drives impulse buying volume',
+        'Inverse relationship confirmed: cheaper products sell far more units than premium ones',
+      ],
+      impact: 'Actionable insights for a real electronics retailer — optimal ad scheduling, city-level budget allocation, and cross-selling strategies that could directly lift revenue by targeting the right customers at the right time.',
+      metrics: [
+        { val: '186K', lbl: 'Rows' },
+        { val: '$4.6M', lbl: 'Peak Month' },
+        { val: '$8.2M', lbl: 'Top City' },
+        { val: '5', lbl: 'Business Q&As' },
+      ],
+    }
+  },
 ];
 
 const METRICS = [
-  { icon: '🚀', val: 2, suffix: '+', label: 'Projects Completed', duration: 1000 },
-  { icon: '📊', val: 284807, suffix: '', label: 'Rows Analyzed', duration: 2200 },
+  { icon: '🚀', val: 4, suffix: '+', label: 'Projects Completed', duration: 1000 },
+  { icon: '📊', val: 471657, suffix: '', label: 'Rows Analyzed', duration: 2200 },
   { icon: '🎯', val: 98.7, suffix: '%', label: 'Highest Accuracy', duration: 1800, isFloat: true },
-  { icon: '🛠️', val: 10, suffix: '+', label: 'Tools Mastered', duration: 1400 },
+  { icon: '🛠️', val: 12, suffix: '+', label: 'Tools Mastered', duration: 1400 },
 ];
 
 /* ==========================================
