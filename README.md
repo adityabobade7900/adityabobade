@@ -143,4 +143,12 @@ In `style.css`, change the CSS variable:
 ---
 
 ## 📞 Need Help?
-Connect: [linkedin.com/in/adityabobade](https://linkedin.com/in/adityabobade)
+
+If you have any questions, suggestions, or run into any issues, feel free to reach out:
+
+| Platform    | Link                                                                          |
+|-------------|-------------------------------------------------------------------------------|
+| 💼 LinkedIn  | [linkedin.com/in/adityabobade](https://linkedin.com/in/adityabobade)          |
+| 📧 Email     | [bobade1436@gmail.com](mailto:bobade1436@gmail.com)                           |
+
+---
