@@ -100,7 +100,7 @@ const PROJECTS = [
       { val: '100%', lbl: 'Test Pass' },
     ],
     tech: ['Python', 'MySQL', 'mysql-connector', 'tkinter'],
-    github: 'https://github.com/adityabobade7900/EMS_Project',
+    github: 'https://github.com/adityabobade7900/EmployeeHub',
     modal: {
       fullDesc: `A real-world Employee Management System demonstrating full-stack thinking with Python and MySQL. Built for HR workflows — from onboarding a new hire to running departmental salary reports.\n\nDesigned with normalized database schemas, proper foreign key constraints, and input validation to mirror production-quality code. The GUI (tkinter) keeps it accessible for non-technical HR staff.`,
       insights: [
