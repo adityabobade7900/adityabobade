@@ -228,8 +228,8 @@ const PROJECTS = [
 ];
 
 const METRICS = [
-  { icon: '🚀', val: 4, suffix: '+', label: 'Projects Completed', duration: 1000 },
-  { icon: '📊', val: 471657, suffix: '', label: 'Rows Analyzed', duration: 2200 },
+  { icon: '🚀', val: 6, suffix: '+', label: 'Projects Completed', duration: 1000 },
+  { icon: '📊', val: 471, suffix: 'K', label: 'Rows Analyzed', duration: 1400 },
   { icon: '🎯', val: 98.7, suffix: '%', label: 'Highest Accuracy', duration: 1800, isFloat: true },
   { icon: '🛠️', val: 12, suffix: '+', label: 'Tools Mastered', duration: 1400 },
 ];
