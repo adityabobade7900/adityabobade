@@ -54,6 +54,40 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    id: 'sales',
+    title: 'Sales Data Analysis',
+    subtitle: 'Python EDA — 12 Months of Electronics Sales',
+    desc: 'EDA on 186,850 rows of real electronics store data. Uncovered best months ($4.6M in Dec), top cities ($8.2M in SF), peak ad hours, and product bundling patterns.',
+    icon: '📊',
+    cats: ['data', 'ml'],
+    badges: ['Python', 'Pandas', 'Matplotlib'],
+    metrics: [
+      { val: '186K', lbl: 'Rows Analyzed' },
+      { val: '$4.6M', lbl: 'Peak Month' },
+      { val: '5', lbl: 'Business Q&As' },
+    ],
+    tech: ['Python', 'Pandas', 'Matplotlib', 'Jupyter', 'Collections'],
+    github: 'https://github.com/adityabobade7900/Sales-Data-Analysis-Python',
+    modal: {
+      fullDesc: `A complete Exploratory Data Analysis on 12 months of real-world electronics store sales data (186,850 rows). The project answers 5 key business questions around when to advertise, where to focus sales efforts, which products to bundle, and how revenue varies by month and city.\n\nAll data cleaning, feature engineering, and visualisations are done in Python using Pandas and Matplotlib inside a Jupyter Notebook.`,
+      insights: [
+        'December was the best month — $4.6M revenue driven by holiday season shopping',
+        'San Francisco led all cities with $8.2M in total sales revenue',
+        'Best ad times: 11 AM and 7 PM — peak order volume hours for maximum impact',
+        'iPhone + Lightning Cable is the top product bundle with 2,140 co-purchases',
+        'AAA Batteries led in units sold (31,017) — low price drives impulse buying volume',
+        'Inverse relationship confirmed: cheaper products sell far more units than premium ones',
+      ],
+      impact: 'Actionable insights for a real electronics retailer — optimal ad scheduling, city-level budget allocation, and cross-selling strategies that could directly lift revenue by targeting the right customers at the right time.',
+      metrics: [
+        { val: '186K', lbl: 'Rows' },
+        { val: '$4.6M', lbl: 'Peak Month' },
+        { val: '$8.2M', lbl: 'Top City' },
+        { val: '5', lbl: 'Business Q&As' },
+      ],
+    }
+  },
+  {
     id: 'finsight',
     title: 'FinSight',
     subtitle: 'Financial Fraud Detection System',
@@ -83,6 +117,44 @@ const PROJECTS = [
         { val: '0.908', lbl: 'ROC-AUC' },
         { val: '284,807', lbl: 'Transactions' },
         { val: '0.17%', lbl: 'Fraud Rate' },
+      ],
+    }
+  },
+  {
+    id: 'churn',
+    title: 'Customer Churn Prediction',
+    subtitle: 'End-to-End ML + Deployed Web App',
+    desc: 'Production-style churn prediction system on IBM Telco dataset with risk scoring, feature insights, and Streamlit deployment.',
+    icon: '📉',
+    cats: ['ml', 'data'],
+    badges: ['ML', 'Python', 'Streamlit'],
+    metrics: [
+      { val: '7K+', lbl: 'Customers' },
+      { val: '0.872', lbl: 'ROC-AUC' },
+      { val: '₹229K+', lbl: 'Revenue Risk' },
+    ],
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'MySQL', 'Power BI', 'Streamlit'],
+    github: 'https://github.com/adityabobade7900/CustomerChurnPrediction',
+    website: 'https://customerchurnprediction7900.streamlit.app/',
+    modal: {
+      fullDesc: `Customer Churn Prediction is a complete end-to-end machine learning system built on the IBM Telco dataset (7,043 customers). The goal: identify customers likely to churn before they leave.\n\nThe project covers the full pipeline — data cleaning, feature engineering, model training, evaluation, and deployment using Streamlit. A 0–100 risk scoring system was built to translate ML predictions into real business actions.`,
+
+      insights: [
+        'Handled class imbalance (~28.85% churn rate) using oversampling techniques',
+        'Random Forest achieved best performance with 0.802 F1 Score and 0.872 ROC-AUC',
+        'Month-to-month contract users churn ~42% vs ~11% for long-term contracts',
+        'Fiber optic users churn nearly 2× compared to DSL customers',
+        'First-year customers are 3× more likely to churn',
+        'Built risk tiers (Low → Critical) with automated business recommendations',
+      ],
+
+      impact: 'This system identifies 3,000+ high-risk customers and highlights ₹229,000+ monthly revenue at risk. It enables proactive retention strategies, reducing churn and improving customer lifetime value.',
+
+      metrics: [
+        { val: '0.802', lbl: 'F1 Score' },
+        { val: '0.872', lbl: 'ROC-AUC' },
+        { val: '7,043', lbl: 'Customers' },
+        { val: '₹229K+', lbl: 'Revenue Risk' },
       ],
     }
   },
@@ -150,40 +222,6 @@ const PROJECTS = [
         { val: '6', lbl: 'API Routes' },
         { val: '5', lbl: 'Categories' },
         { val: '20', lbl: 'Demo Records' },
-      ],
-    }
-  },
-  {
-    id: 'sales',
-    title: 'Sales Data Analysis',
-    subtitle: 'Python EDA — 12 Months of Electronics Sales',
-    desc: 'EDA on 186,850 rows of real electronics store data. Uncovered best months ($4.6M in Dec), top cities ($8.2M in SF), peak ad hours, and product bundling patterns.',
-    icon: '📊',
-    cats: ['data', 'ml'],
-    badges: ['Python', 'Pandas', 'Matplotlib'],
-    metrics: [
-      { val: '186K', lbl: 'Rows Analyzed' },
-      { val: '$4.6M', lbl: 'Peak Month' },
-      { val: '5', lbl: 'Business Q&As' },
-    ],
-    tech: ['Python', 'Pandas', 'Matplotlib', 'Jupyter', 'Collections'],
-    github: 'https://github.com/adityabobade7900/Sales-Data-Analysis-Python',
-    modal: {
-      fullDesc: `A complete Exploratory Data Analysis on 12 months of real-world electronics store sales data (186,850 rows). The project answers 5 key business questions around when to advertise, where to focus sales efforts, which products to bundle, and how revenue varies by month and city.\n\nAll data cleaning, feature engineering, and visualisations are done in Python using Pandas and Matplotlib inside a Jupyter Notebook.`,
-      insights: [
-        'December was the best month — $4.6M revenue driven by holiday season shopping',
-        'San Francisco led all cities with $8.2M in total sales revenue',
-        'Best ad times: 11 AM and 7 PM — peak order volume hours for maximum impact',
-        'iPhone + Lightning Cable is the top product bundle with 2,140 co-purchases',
-        'AAA Batteries led in units sold (31,017) — low price drives impulse buying volume',
-        'Inverse relationship confirmed: cheaper products sell far more units than premium ones',
-      ],
-      impact: 'Actionable insights for a real electronics retailer — optimal ad scheduling, city-level budget allocation, and cross-selling strategies that could directly lift revenue by targeting the right customers at the right time.',
-      metrics: [
-        { val: '186K', lbl: 'Rows' },
-        { val: '$4.6M', lbl: 'Peak Month' },
-        { val: '$8.2M', lbl: 'Top City' },
-        { val: '5', lbl: 'Business Q&As' },
       ],
     }
   },
@@ -470,14 +508,25 @@ function renderProjects(cat = 'all') {
           ${project.tech.map(t => `<span class="proj-tech">${t}</span>`).join('')}
         </div>
       </div>
-      <div class="proj-footer">
-        <button class="proj-btn-detail" data-id="${project.id}">
-          View Details <i class="fas fa-arrow-right"></i>
-        </button>
-        <a href="${project.github}" target="_blank" rel="noopener" class="proj-gh" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
+<div class="proj-footer">
+  <button class="proj-btn-detail" data-id="${project.id}">
+    View Details <i class="fas fa-arrow-right"></i>
+  </button>
+
+  <div style="display:flex; gap:10px;">
+
+    ${project.website ? `
+      <a href="${project.website}" target="_blank" rel="noopener" class="proj-gh" aria-label="Live Demo">
+        <i class="fas fa-globe"></i>
+      </a>
+    ` : ''}
+
+    <a href="${project.github}" target="_blank" rel="noopener" class="proj-gh" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+  </div>
+</div>
     `;
 
     grid.appendChild(card);
@@ -543,12 +592,20 @@ function openModal(id) {
       ${project.tech.map(t => `<span class="modal-tech-tag">${t}</span>`).join('')}
     </div>
 
-    <div class="modal-ctas">
-      <a href="${project.github}" target="_blank" rel="noopener" class="btn-primary">
-        <i class="fab fa-github"></i> View on GitHub
-      </a>
-      <button class="btn-ghost" onclick="closeModal()">Close</button>
-    </div>
+<div class="modal-ctas">
+
+  ${project.website ? `
+    <a href="${project.website}" target="_blank" rel="noopener" class="btn-primary">
+      <i class="fas fa-globe"></i> Live Demo
+    </a>
+  ` : ''}
+
+  <a href="${project.github}" target="_blank" rel="noopener" class="btn-secondary">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <button class="btn-ghost" onclick="closeModal()">Close</button>
+</div>
   `;
 
   modalOverlay.classList.add('open');
