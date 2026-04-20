@@ -54,6 +54,40 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    id: 'carmileage',
+    title: 'Car Mileage Predictor',
+    subtitle: 'Fuel Efficiency Prediction System',
+    desc: 'End-to-end ML web app predicting car fuel efficiency (MPG) from engine specs using Random Forest with R²=0.9586 and MAE of just 0.61 MPG.',
+    icon: '🚗',
+    cats: ['ml', 'data'],
+    badges: ['ML', 'Python', 'Streamlit'],
+    metrics: [
+      { val: '0.9586', lbl: 'R² Score' },
+      { val: '0.61', lbl: 'MAE (MPG)' },
+      { val: '11.8K', lbl: 'Records' },
+    ],
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'RandomForest', 'Streamlit', 'Matplotlib', 'Seaborn', 'Pickle'],
+    github: 'https://github.com/adityabobade7900/CarMileagePredictor',
+    website: 'https://customerchurnprediction7900.streamlit.app/',
+    modal: {
+      fullDesc: `Car Mileage Predictor is an end-to-end Machine Learning web application trained on 11,800+ real vehicle records from the Car Features and MSRP Dataset (1990–2018). The app takes engine specifications as input and predicts combined fuel efficiency in MPG — also converted to km/litre for Indian users.\n\nThe model uses a Random Forest Regressor achieving R²=0.9586 and MAE of just 0.61 MPG, meaning predictions are within less than 1 MPG of the actual value on average. The trained model and encoders are saved as .pkl files for instant inference without retraining.`,
+      insights: [
+        'Engineered Engine_CC feature (cylinders × 500) which became the top predictor at 78.8% feature importance',
+        'Handled nulls using grouped median imputation by fuel type and cylinder count — preserving data integrity',
+        'Removed electric vehicles from training data as MPGe scale is incompatible with ICE car predictions',
+        'Applied LabelEncoder to 5 categorical features with encoders saved separately for consistent inference',
+        'Compared multiple algorithms — Random Forest outperformed with R²=0.9586 vs baseline regression',
+      ],
+      impact: 'Deployed live on Streamlit with real-time MPG prediction, km/litre conversion for Indian context, colour-coded efficiency ratings (Excellent / Average / Low), and feature importance chart so users understand what drives their car\'s fuel efficiency.',
+      metrics: [
+        { val: '0.9586', lbl: 'R² Score' },
+        { val: '0.61 MPG', lbl: 'Mean Abs Error' },
+        { val: '11,800+', lbl: 'Training Records' },
+        { val: '78.8%', lbl: 'Engine_CC Importance' },
+      ],
+    }
+  },
+  {
     id: 'sales',
     title: 'Sales Data Analysis',
     subtitle: 'Python EDA — 12 Months of Electronics Sales',
@@ -225,6 +259,39 @@ const PROJECTS = [
       ],
     }
   },
+  {
+    id: 'startupprofit',
+    title: 'Startup Profit Predictor',
+    subtitle: 'Business Profit Prediction System',
+    desc: 'ML web app that predicts startup profit based on R&D Spend, Administration, Marketing Spend and State — built with Flask and scikit-learn.',
+    icon: '🚀',
+    cats: ['ml', 'web'],
+    badges: ['ML', 'Python', 'Flask'],
+    metrics: [
+      { val: '50', lbl: 'Startups Dataset' },
+      { val: '4', lbl: 'Input Features' },
+      { val: '3', lbl: 'States Supported' },
+    ],
+    tech: ['Python', 'Flask', 'Scikit-learn', 'Pandas', 'HTML5', 'CSS3', 'JavaScript', 'Pickle'],
+    github: 'https://github.com/adityabobade7900/StartupProfitPrediction.git',
+    modal: {
+      fullDesc: `Startup Profit Predictor is a Flask-based ML web application trained on the Kaggle 50 Startups dataset. Users input R&D Spend, Administration cost, Marketing Spend, and State — and the model instantly predicts the expected startup profit.\n\nThe backend preprocesses inputs using a saved OneHotEncoder for the State column and a StandardScaler for numeric features, then passes them to a trained regression model — all serialized with Pickle for fast inference without retraining.`,
+      insights: [
+        'Built a REST API with Flask — POST /predict endpoint accepts JSON and returns predicted profit',
+        'Applied OneHotEncoder on the State categorical column and StandardScaler on all numeric features',
+        'Saved encoder, scaler, and model separately as pickle files for consistent and reliable inference',
+        'Frontend built in vanilla HTML/CSS/JS — no frameworks needed, keeping the app lightweight',
+        'Supports 3 US states from training data: California, Florida, and New York',
+      ],
+      impact: 'Enables early-stage startup founders and investors to estimate profit potential based on spend allocation across R&D, Administration, and Marketing — supporting smarter budget decisions.',
+      metrics: [
+        { val: '50', lbl: 'Training Records' },
+        { val: '4', lbl: 'Input Features' },
+        { val: '3', lbl: 'States Supported' },
+        { val: 'Flask', lbl: 'Deployment' },
+      ],
+    }
+  }
 ];
 
 const METRICS = [
